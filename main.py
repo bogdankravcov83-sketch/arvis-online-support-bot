@@ -70,6 +70,13 @@ router = Router()
 
 
 # =========================
+# Time helper
+# =========================
+def utc_now():
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+# =========================
 # Database
 # =========================
 class Database:
@@ -339,10 +346,6 @@ class AdminReply(StatesGroup):
 # =========================
 # Helpers / keyboards
 # =========================
-def utc_now():
-    return datetime.now(timezone.utc).isoformat(timespec="seconds")
-
-
 def display_dt(value: str) -> str:
     try:
         dt = datetime.fromisoformat(value)
