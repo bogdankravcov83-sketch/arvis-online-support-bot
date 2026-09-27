@@ -27,7 +27,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 # =========================
 BOT_TOKEN = os.getenv("BOT_TOKEN", "PUT_YOUR_BOT_TOKEN_HERE")
 ADMIN_IDS = [
-    123456789,
+    6099747512,
     987654321,
 ]
 
